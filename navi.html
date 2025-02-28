@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: "Roboto Mono", serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="planning" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-days" style="color: #929292;"></i> planning</a>
+		<a id="courses" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list" style="color: #929292;"></i> courses</a>
+        <a id="english" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-pen" style="color: #929292;"></i> english</a>
+        <a id="french" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-pen" style="color: #929292;"></i> french</a>
+        <a id="homework" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book-open" style="color: #929292;"></i> homework</a>
+        <a id="review" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-glasses" style="color: #929292;"></i> review</a>
+        <a id="note" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book-open" style="color: #929292;"></i> note</a>
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'planning')
+				window.open("https://www.notion.so/PLANNING-1a0350575b5680ebb311d5307449b02d?pvs=4", '_blank').focus();
+            else if (id == 'courses')
+				window.open("https://www.notion.so/1a0350575b5680dbbd36fe1de9471da5?v=1a0350575b5680879b1a000c3edaa084&pvs=4", '_blank').focus();
+            else if (id == 'english')
+				window.open("https://www.notion.so/ENGLISH-1a0350575b56806baa72fe234599d93f?pvs=4", '_blank').focus();
+            else if (id == 'french')
+				window.open("https://www.notion.so/FRENCH-1a0350575b568032a809c9e018310d75?pvs=4", '_blank').focus();
+            else if (id == 'homework')
+				window.open("https://www.notion.so/HOMEWORK-1a0350575b5680748fd9cd9473e134ba?pvs=4", '_blank').focus();
+            else if (id == 'review')
+				window.open("https://www.notion.so/REVIEW-1a0350575b568041b74bdb0898a3c273?pvs=4", '_blank').focus();
+            else if (id == 'note')
+				window.open("https://www.notion.so/NOTE-1a0350575b5680a99198ebf77c5ca156?pvs=4", '_blank').focus();
+		}
+	</script>
+
+
+</body>
+
+</html>
