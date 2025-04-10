@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <style>
+    :root {
+      --my-color: #34495e;
+      --my-color-accent: #2c3e50;
+      --black: #3c3c3c;
+      --black-accent: #2d2d2d;
+      --blue: #809bce;
+      --blue-accent: #5c6f94;
+      --purple: #8a508f;
+      --purple-accent: #5d3661;
+      --mint: #b8e0d4;
+      --mint-accent: #8ba89f;
+      --pink: #eac4d5;
+      --pink-accent: #b495a3;
+      --green: #c3d117; /* Updated green background color */
+      --green-accent: #5e8675; /* Consider updating this as well if needed */
+      --red: #d74a49;
+      --red-accent: #b53f3f;
+      --orange: #d35400;
+      --orange-accent: #9e4102;
+      --yellow: #f1c40f;
+      --yellow-accent: #bd9a0c;
+    }
+
+    button {
+      background: none;
+      color: inherit;
+      border: none;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+    }
+
+    i {
+      padding-right: 2px;
+    }
+
+    .btn {
+      text-align: center;
+      color: #c95700;
+      font-family: 'Manrope';
+      display: inline-block;
+      margin: 10px;
+      background-color: var(--green); /* New green button background */
+    }
+
+    .btn:hover {
+      background-color: var(--green-accent);
+    }
+
+    .rounded {
+      border-radius: 20px;
+    }
+
+    .small {
+      padding: 5px 20px;
+      font-size: 10px;
+    }
+
+    .mid {
+      padding: 10px 40px;
+      font-size: 12px;
+    }
+
+    .large {
+      padding: 15px 60px;
+      font-size: 18px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <button class="btn large rounded" type="button" onclick="navigate()"> <i class="fa-solid fa-right-to-bracket"></i> Home</button>
+
+  <script>
+    function navigate() {
+      window.open("https://www.notion.so/DUOLINGO-1cfe610d34cd8054a942fb26665a5dc2?pvs=4", '_blank').focus();
+    }
+  </script>
+
+</body>
+
+</html>
